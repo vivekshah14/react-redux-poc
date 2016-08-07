@@ -1,0 +1,54 @@
+.container {
+  /*margin: 0 auto;*/
+  padding: 40px;
+  width: 56.5%;
+  color: #333;
+  background-color: #fafafb;
+}
+.appcenter-prev{
+  display: block;
+  left: -25px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-top: -10px\9;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #404040;
+  font-size: 30px;
+}
+.appcenter-next{
+  display: block;
+  right: -20px;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-top: -10px\9;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #404040;
+  font-size: 30px;
+}
+.app-header{
+  font-size: 16px;
+}
