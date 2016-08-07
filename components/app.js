@@ -1,9 +1,15 @@
 import React from 'react';
 import Slider from 'react-slick';
-import AppCardsCarousel from './appCardsCarousel.js'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import appCardReducer from '../reducers/appCardReducer.js';
+import AppCardsCarousel from './appCardsCarousel.js';
 
 class App extends React.Component {
+
   render() {
+    let trendingNowCarouselStore = createStore(appCardReducer);
+
     var settings = {
       dots: true,
       infinite: true,
@@ -13,7 +19,9 @@ class App extends React.Component {
     };
     return (
       <div>
+        <Provider store = {trendingNowCarouselStore}>
             <AppCardsCarousel />
+        </Provider>
       </div>
       );
   }
