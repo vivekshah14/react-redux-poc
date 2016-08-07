@@ -6,21 +6,21 @@ var defaultAppCards = [{
   appDeveloper: 'by Collbox Inc.',
   appDesc: 'Click. Connect. Collect. CollBox simplifies the task of debt collection.',
   imgUrl: 'https://images.appcenter.intuit.com/Content/images/AppCards/b7qxu6xgqr/Submitted30/LogoName.png',
-  numReviews: '30',
+  numReviews: '2',
   subscribeUrl: 'https://appcenter.intuit.com/collbox?locale=en-US'
 }, {
   appName: 'Breezeworks',
   appDeveloper: 'by Breezeworks, Inc.',
   appDesc: 'Simple Booking, Dispatching, and Billing automation for small-medium teams',
   imgUrl: 'https://images.appcenter.intuit.com/Content/images/AppCards/b7qisuys55/Submitted13/LogoName.png',
-  numReviews: '3',
+  numReviews: '10',
   subscribeUrl: 'https://appcenter.intuit.com/app-b7qisuys55?locale=en-US'
 }, {
   appName: 'Expensify',
   appDeveloper: 'by Expensify, Inc.',
   appDesc: "Expense reports that don't suck!",
   imgUrl: 'https://images.appcenter.intuit.com/Content/images/AppCards/b7pjb9i9mn/Submitted19/icon-Expensify_large.png',
-  numReviews: '300',
+  numReviews: '460',
   subscribeUrl: 'https://appcenter.intuit.com/expensify?locale=en-US'
 }, {
   appName: 'Google Calendar for QuickBooks BETA',
@@ -34,7 +34,7 @@ var defaultAppCards = [{
   appDeveloper: 'by ProRata Inc.',
   appDesc: "Automated Revenue Recognition",
   imgUrl: 'https://images.appcenter.intuit.com/Content/images/AppCards/b7qzyt9ejq/Submitted20/LogoName.png',
-  numReviews: '1',
+  numReviews: '78',
   subscribeUrl: 'https://appcenter.intuit.com/prorata?locale=en-US'
 }, {
   appName: 'American Express',
@@ -45,8 +45,7 @@ var defaultAppCards = [{
   subscribeUrl: 'https://appcenter.intuit.com/amex?locale=en-US'
 }];
 
-let appCardReducer = (state = defaultAppCards, action) => {
-
+let appCards = (state = defaultAppCards, action) => {
   switch (action.type) {
     default:
       return state;
@@ -54,7 +53,7 @@ let appCardReducer = (state = defaultAppCards, action) => {
 }
 
 const myReducer = combineReducers({
-  appCardReducer
+  appCards
 })
 
 export default myReducer;

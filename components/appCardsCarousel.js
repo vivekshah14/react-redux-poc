@@ -11,7 +11,7 @@ class AppCardsCarousel extends React.Component {
   render() {
     const {dispatch, appCardsList} = this.props;
 
-    var appCards = appCardsList.appCardReducer.map((appCardVal, i) => {
+    var appCards = appCardsList.appCards.map((appCardVal, i) => {
       return (
         <div key={appCardVal.appName}>
           <a href={appCardVal.subscribeUrl}>
